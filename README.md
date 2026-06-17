@@ -9,10 +9,12 @@ The plugin has no hardcoded project path. Defaults are bundled in the package. A
 Install from a private Git npm source:
 
 ```bash
-opencode plugin git+https://github.com/solaxu/mygo.git -g --force
+opencode plugin https://github.com/solaxu/mygo/archive/refs/heads/main.tar.gz -g --force
 ```
 
 Restart OpenCode after installation.
+
+OpenCode 1.17.7 may fail on direct Git dependency specs such as `git+https://github.com/solaxu/mygo.git` with `git dep preparation failed`. The GitHub branch tarball URL above installs from the same private repository and has been verified with `opencode plugin`.
 
 ## Use
 
