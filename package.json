@@ -12,6 +12,7 @@
   "scripts": {
     "build": "tsc",
     "typecheck": "tsc --noEmit",
+    "prepare": "npm run build",
     "prepack": "npm run build"
   },
   "main": "./dist/index.js",

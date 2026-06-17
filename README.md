@@ -9,7 +9,7 @@ The plugin has no hardcoded project path. Defaults are bundled in the package. A
 Install from a private Git npm source:
 
 ```bash
-opencode plugin https://github.com/solaxu/mygo.git -g --force
+opencode plugin git+https://github.com/solaxu/mygo.git -g --force
 ```
 
 Restart OpenCode after installation.
