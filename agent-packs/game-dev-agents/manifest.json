@@ -1,0 +1,106 @@
+{
+  "id": "game-dev-agents",
+  "name": "OpenCode Game Dev Agents Pack",
+  "version": "0.1.0",
+  "description": "Reusable OpenCode Markdown agents for game engine and game development team review workflows.",
+  "agents": [
+    {
+      "id": "game-engine-architect",
+      "file": "game-engine-architect.md",
+      "group": "engine-core",
+      "sha256": "b0d8c30698b022cfb2cda99aad30b42066de322eade513fa57acb6c7d4635c5a"
+    },
+    {
+      "id": "3d-rendering-architect",
+      "file": "3d-rendering-architect.md",
+      "group": "engine-core",
+      "sha256": "8e993bfaea3657ba94d8a2f8fdbd204afdab239eade11dfa585e1b42afee6916"
+    },
+    {
+      "id": "engine-tooling-asset-pipeline-architect",
+      "file": "engine-tooling-asset-pipeline-architect.md",
+      "group": "engine-core",
+      "sha256": "c2f65f4e6ac52adab8ed3d9bfc0c5104d1919b0aadc781427cfbed00372a1712"
+    },
+    {
+      "id": "engine-performance-platform-architect",
+      "file": "engine-performance-platform-architect.md",
+      "group": "engine-core",
+      "sha256": "c5fe616219b46155e2dca64d6bb13c6fe0105b985159307ce75cad60bc02a7a6"
+    },
+    {
+      "id": "game-system-designer",
+      "file": "game-system-designer.md",
+      "group": "game-team",
+      "sha256": "f306a0b5d9dbca944fde36cc616294c50dc7db1f1077363be79e689ebb603bb8"
+    },
+    {
+      "id": "quest-narrative-designer",
+      "file": "quest-narrative-designer.md",
+      "group": "game-team",
+      "sha256": "1ae58575e7bc7573232f5d3ab77378a2e436a35f2e90984c7b1d5b0024ee3d04"
+    },
+    {
+      "id": "game-data-config-specialist",
+      "file": "game-data-config-specialist.md",
+      "group": "game-team",
+      "sha256": "fa988376c0a3c2eeca6d5f7731fd09907fe16a3a9ad242dabc87be8f5b40c246"
+    },
+    {
+      "id": "ui-ux-designer",
+      "file": "ui-ux-designer.md",
+      "group": "game-team",
+      "sha256": "760e351e2b7e285e46efcbaca733107a843b37aa238d3aaf3464cde4c87d6c54"
+    },
+    {
+      "id": "gameplay-client-engineer",
+      "file": "gameplay-client-engineer.md",
+      "group": "game-team",
+      "sha256": "7d3c973e67e75ce76a510662d1f4f2e565eda929a939753c2801f71385b8a04f"
+    },
+    {
+      "id": "technical-artist",
+      "file": "technical-artist.md",
+      "group": "game-team",
+      "sha256": "9d5217de86113e7be6666071bd99e3f6f8f7fc8a7e65190a0ef37b73919c364d"
+    },
+    {
+      "id": "qa-automation-lead",
+      "file": "qa-automation-lead.md",
+      "group": "game-team",
+      "sha256": "6733b11fb84815521ed265ce97e4617b95dd0d720ad38244509a18dd65973451"
+    },
+    {
+      "id": "build-release-manager",
+      "file": "build-release-manager.md",
+      "group": "game-team",
+      "sha256": "c63e3c670744b8aeef5fba223edbedc704c89beae0a6cdf83dfe424e9ec9c1c2"
+    }
+  ],
+  "groups": [
+    {
+      "id": "engine-core",
+      "name": "Engine Core",
+      "agents": [
+        "game-engine-architect",
+        "3d-rendering-architect",
+        "engine-tooling-asset-pipeline-architect",
+        "engine-performance-platform-architect"
+      ]
+    },
+    {
+      "id": "game-team",
+      "name": "Game Team",
+      "agents": [
+        "game-system-designer",
+        "quest-narrative-designer",
+        "game-data-config-specialist",
+        "ui-ux-designer",
+        "gameplay-client-engineer",
+        "technical-artist",
+        "qa-automation-lead",
+        "build-release-manager"
+      ]
+    }
+  ]
+}

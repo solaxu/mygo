@@ -140,3 +140,34 @@ opencode agent list
 ```
 
 Confirm that the command and `plan-arena-*` agents are present. A real workflow run also requires the selected model provider account to have available balance.
+
+## Game Dev Agents Pack
+
+This repository also distributes a reusable OpenCode agent pack:
+
+```text
+agent-packs/game-dev-agents
+```
+
+The pack contains 12 Markdown agents for game engine architecture and game development team review workflows. It is intentionally packaged as files plus PowerShell install/validate scripts instead of a TypeScript plugin, because OpenCode discovers agents from `agents/*.md`.
+
+Install globally on Windows:
+
+```powershell
+cd agent-packs\game-dev-agents
+.\validate.ps1 -PackOnly
+.\install.ps1
+.\validate.ps1
+```
+
+Install into a specific project:
+
+```powershell
+cd agent-packs\game-dev-agents
+.\install.ps1 -Project D:\path\to\project
+.\validate.ps1 -Project D:\path\to\project
+```
+
+The installer does not overwrite different local agent files unless `-Force` is provided. Use `-Backup` with `-Force` to preserve overwritten files under `.backup\game-dev-agents\<timestamp>\`.
+
+See `agent-packs/game-dev-agents/README.md` for the full agent list, uninstall command, and cross-machine copy workflow.
